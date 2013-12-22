@@ -1,0 +1,23 @@
+{
+    "name": "grunt-definer",
+    "description": "Plugin to make modules",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tenorok/grunt-definer.git"
+    },
+    "author": {
+        "name": "Artem Kurbatov",
+        "email": "mail@tenorok.ru",
+        "homepage": "http://tenorok.ru"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "definer": "~0.0.2"
+
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-clean": "~0.5.0"
+    }
+}
