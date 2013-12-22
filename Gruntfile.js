@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 directory: 'test/modules/'
             },
             c: {
-                target: 'test/tmp/с.js',
+                target: 'test/tmp/c.js',
                 directory: 'test/modules/',
                 module: 'c',
                 verbose: ['info']
@@ -22,12 +22,17 @@ module.exports = function(grunt) {
                 postfix: 'js',
                 verbose: ['warn', 'error']
             }
+        },
+        nodeunit: {
+            tests: ['test/*_test.js']
         }
     });
 
     grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
     grunt.registerTask('default', ['clean', 'definer']);
+    grunt.registerTask('test', ['clean', 'definer', 'nodeunit']);
 
 };
