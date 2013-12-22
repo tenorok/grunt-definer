@@ -2,7 +2,10 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         clean: {
-            test: ['test/tmp/*']
+            test: [
+                '!test/tmp/.gitkeep',
+                'test/tmp/*'
+            ]
         },
         definer: {
             all: {
