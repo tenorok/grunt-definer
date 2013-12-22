@@ -14,10 +14,13 @@
     "license": "MIT",
     "dependencies": {
         "definer": "~0.0.2"
-
     },
     "devDependencies": {
         "grunt": "~0.4.1",
-        "grunt-contrib-clean": "~0.5.0"
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-nodeunit": "~0.2.1"
+    },
+    "scripts": {
+        "test": "grunt test"
     }
 }
