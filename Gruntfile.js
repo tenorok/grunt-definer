@@ -10,7 +10,15 @@ module.exports = function(grunt) {
         definer: {
             all: {
                 target: 'test/tmp/all.js',
-                directory: 'test/modules/'
+                directory: 'test/modules/',
+                clean: {
+                    $: [
+                        'test/libs/jquery/jquery.js',
+                        'test/libs/jquery/jquery.ui.js',
+                        'test/libs/jquery/plugin.jquery.js'
+                    ],
+                    _: 'test/libs/underscore.js'
+                }
             },
             c: {
                 target: 'test/tmp/c.js',
