@@ -1,4 +1,4 @@
 definer(
     "a"
-    ,function() { return 'a'; }
+    ,function($, _) { return 'a'; }
 );
