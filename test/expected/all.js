@@ -1,4 +1,4 @@
-(function(global) {
+(function(global, undefined) {
 var a = (function () { return 'a'; }).call(global),
 b = (function (a){return a + 'b';}).call(global, a),
 c = (function (a, b) {
