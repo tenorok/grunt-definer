@@ -13,7 +13,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "definer": "~0.0.2"
+        "definer": "~0.1.3"
     },
     "devDependencies": {
         "grunt": "~0.4.1",
