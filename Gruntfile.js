@@ -18,6 +18,12 @@ module.exports = function(grunt) {
                         'test/libs/jquery/plugin.jquery.js'
                     ],
                     _: 'test/libs/underscore.js'
+                },
+                jsdoc: {
+                    "file": "File description",
+                    "copyright": "2014 Artem Kurbatov, tenorok.ru",
+                    "license": "MIT license",
+                    "name": "package.json"
                 }
             },
             c: {

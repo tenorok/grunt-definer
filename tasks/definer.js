@@ -15,7 +15,8 @@ module.exports = function(grunt) {
             module: data.module,
             postfix: data.postfix,
             verbose: data.verbose,
-            clean: data.clean
+            clean: data.clean,
+            jsdoc: data.jsdoc
         }).make(target).then(function(saved) {
 
             saved
