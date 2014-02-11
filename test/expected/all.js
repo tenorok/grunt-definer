@@ -1,7 +1,14 @@
 var $ = function() { return 'jquery'; };
 $.ui = function() { return 'jquery.ui'; };
 $.plugin = function() { return 'jquery.plugin'; };
-var _ = function() { return 'underscore'; };(function(global, undefined) {
+var _ = function() { return 'underscore'; };
+/*!
+ * @file File description
+ * @copyright 2014 Artem Kurbatov, tenorok.ru
+ * @license MIT license
+ * @name grunt-definer
+ */
+(function(global, undefined) {
 var $ = global.$,
 _ = global._,
 a = (function ($, _) { return 'a'; }).call(global, $, _),

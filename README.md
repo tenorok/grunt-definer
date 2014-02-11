@@ -89,6 +89,14 @@ _Обязательный_
 
 Опция указывает пути до файлов, хранящих переменные глобального контекста.
 
+#### jsdoc
+
+Тип: `Object`
+
+По умолчанию: `{}`
+
+Опция формирует JSDoc, содержащий информацию о собранном файле.
+
 ## Примеры
 
 #### Сборка всех модулей
@@ -136,6 +144,30 @@ definer: {
     directory: 'modules/',
     module: 'd',
     postfix: 'module.js'
+  }
+}
+```
+
+#### Сборка с формированием JSDoc
+
+В собранный файл будет добавлен JSDoc.
+
+Тегу `version` установится значение одноимённого поля из файла `package.json`.
+
+Тег `date` будет указывать на текущую дату.
+
+```js
+definer: {
+  all: {
+    target: 'all.js',
+    directory: 'modules/',
+    jsdoc: {
+      "file": "File description",
+      "copyright": "2014 Artem Kurbatov, tenorok.ru",
+      "license": "MIT license",
+      "version": "package.json",
+      "date": true
+    }
   }
 }
 ```
