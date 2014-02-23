@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             target = path.join(cwd, data.target);
 
         new Maker({
-            directory: path.join(cwd, data.directory),
+            directory: data.directory,
             module: data.module,
             postfix: data.postfix,
             verbose: data.verbose,
