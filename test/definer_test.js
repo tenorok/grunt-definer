@@ -30,5 +30,15 @@ exports.definer = {
         test.equal(expect, result, 'должны быть собраны все модули для модуля d');
 
         test.done();
+    },
+    x: function(test) {
+        test.expect(1);
+
+        var expect = grunt.file.read('test/expected/x.js'),
+            result = grunt.file.read('test/tmp/x.js');
+
+        test.equal(expect, result, 'должны быть собраны все модули для модуля x');
+
+        test.done();
     }
 };
