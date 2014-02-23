@@ -38,6 +38,14 @@ module.exports = function(grunt) {
                 module: 'd',
                 postfix: 'js',
                 verbose: ['warn', 'error']
+            },
+            x: {
+                target: 'test/tmp/x.js',
+                directory: [
+                    'test/modules/',
+                    'test/modules2/'
+                ],
+                module: 'x'
             }
         },
         nodeunit: {
