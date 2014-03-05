@@ -1,7 +1,10 @@
-var $ = function() { return 'jquery'; };
-$.ui = function() { return 'jquery.ui'; };
-$.plugin = function() { return 'jquery.plugin'; };
-var _ = function() { return 'underscore'; };
+(function(undefined) {
+var exports = modules = define = undefined;
+(function(global) { global.$ = 'jquery'; })(this);
+(function(global) { global.$.ui = 'jquery.ui'; })(this);
+(function(global) { global.$.plugin = 'jquery.plugin'; })(this);
+(function(global) { global._ = 'underscore'; })(this);
+}).call(this);
 /*!
  * @file File description
  * @copyright 2014 Artem Kurbatov, tenorok.ru
