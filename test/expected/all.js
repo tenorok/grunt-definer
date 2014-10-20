@@ -1,5 +1,5 @@
 (function(undefined) {
-var exports = modules = define = undefined;
+var exports = undefined, modules = undefined, define = undefined;
 (function(global) { global.$ = 'jquery'; })(this);
 (function(global) { global.$.ui = 'jquery.ui'; })(this);
 (function(global) { global.$.plugin = 'jquery.plugin'; })(this);
