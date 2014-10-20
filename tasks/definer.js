@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         new Maker({
             directory: data.directory,
             module: data.module,
+            istanbul: data.istanbul,
             postfix: data.postfix,
             verbose: data.verbose,
             clean: data.clean,
